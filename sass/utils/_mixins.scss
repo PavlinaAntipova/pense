@@ -1,0 +1,19 @@
+@mixin padding($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin flexsible($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button($padding-top, $padding-right, $padding-bottom, $padding-left) {
+  border: 1px solid $accent-color;
+  border-radius: 8px;
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+  padding-right: $padding-right;
+  padding-left: $padding-left;
+}

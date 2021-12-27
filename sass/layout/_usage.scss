@@ -1,0 +1,52 @@
+.usage {
+  position: relative;
+  @include padding(120px, 93px);
+  background-color: $accent-color;
+  background-image: url(../image/bg-gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.usage__title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 100%;
+  color: $main-light-color;
+  margin-bottom: 25px;
+}
+
+.usage__description {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+  color: $main-light-color;
+  margin-bottom: 60px;
+}
+
+.usage__button {
+  display: inline-flex;
+  align-items: center;
+  @include button(20px, 24px, 20px, 24px);
+  font-size: 22px;
+  line-height: 95%;
+  background-color: $main-light-color;
+  color: $accent-color;
+  border: 1px solid $main-light-color;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $main-light-color;
+  }
+
+  & svg {
+    stroke: currentColor;
+    margin-left: 10px;
+  }
+}
+
+.illustration-box {
+  display: flex;
+  justify-content: space-between;
+}

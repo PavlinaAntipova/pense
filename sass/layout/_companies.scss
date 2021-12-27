@@ -1,0 +1,13 @@
+.companies-section {
+  @include padding(85px, 70px);
+}
+
+.companies {
+  @include flexsible(center, center);
+}
+
+.companies__item {
+  &:not(:last-child) {
+    margin-right: 108px;
+  }
+}

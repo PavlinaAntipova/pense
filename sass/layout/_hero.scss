@@ -1,0 +1,45 @@
+.hero {
+  padding-bottom: 210px;
+}
+
+.hero__container {
+  @include flexsible(space-between, center);
+}
+
+.hero__wrraper {
+  max-width: 540px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+}
+
+.hero__text {
+  margin-bottom: 40px;
+  @extend %text;
+}
+
+.hero__button {
+  @include button(18px, 24px, 18px, 24px);
+  display: inline-flex;
+  align-items: center;
+  margin-right: 25px;
+  font-size: 18px;
+  line-height: 95%;
+  color: $main-light-color;
+  background-color: $accent-color;
+
+  &:hover {
+    background-color: $main-light-color;
+    color: $accent-color;
+  }
+}
+
+.hero__icon {
+  margin-left: 10px;
+  stroke: currentColor;
+}
+
+.hero__description {
+  @extend %text;
+}

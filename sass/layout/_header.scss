@@ -1,0 +1,39 @@
+.header {
+  @include padding(60px, 105px);
+}
+
+.header__container {
+  @include flexsible(space-between, center);
+}
+
+.nav__list {
+  @include flexsible(center, center);
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.nav__link {
+  font-size: 18px;
+  line-height: 95%;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.header__button {
+  @include button(15px, 18px, 18px, 15px);
+  font-size: 18px;
+  line-height: 95%;
+  color: $accent-color;
+  background-color: $main-light-color;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $main-light-color;
+  }
+}

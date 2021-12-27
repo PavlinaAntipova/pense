@@ -1,0 +1,87 @@
+.price {
+  @include padding(125px, 125px);
+  background-color: #fffaf8;
+}
+
+.price__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.price-cards {
+  @include flexsible(center, center);
+  margin: -15px;
+}
+
+.price-cards__item {
+  flex-basis: calc(100% / 3 - 30px);
+  background-color: $main-light-color;
+  margin: 15px;
+  @include padding(40px, 60px);
+  padding-left: 40px;
+  border-radius: 12px;
+  border: 1px solid #f5f5f5;
+}
+
+.price-cards__icon,
+.price-card__title,
+.price-description {
+  margin-bottom: 25px;
+}
+
+.price-description__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  & svg {
+    margin-right: 8px;
+  }
+
+  & p {
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+}
+
+.price-card__button {
+  @include button(12px, 24px, 12px, 24px);
+  @include flexsible(center, center);
+  color: $accent-color;
+  background-color: $main-light-color;
+  font-size: 16px;
+  line-height: 1.63em;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $main-light-color;
+  }
+
+  & svg {
+    margin-left: 10px;
+    stroke: currentColor;
+  }
+}
+
+.price-card__value {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.63em;
+
+  & span {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.6em;
+    color: $secondary-color;
+  }
+}
+
+.price-card__add-fare {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 12px;
+  line-height: 1.58em;
+  color: $secondary-color;
+}

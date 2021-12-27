@@ -1,0 +1,148 @@
+.footer {
+  @include padding(81px, 90px);
+}
+
+.footer__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__wrapper--decoration {
+  padding-bottom: 40px;
+
+  &::after {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(189, 189, 189, 0.2);
+  }
+}
+
+.footer__wrapper--padding {
+  padding-top: 20px;
+}
+
+.footer__title {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.63em;
+  text-transform: uppercase;
+  color: $main-dark-color;
+}
+
+.link-list__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: $main-dark-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.link-list__item {
+  margin-bottom: 8px;
+}
+
+.links-box .link-list .link-list__item:last-child,
+.legal-box .link-list .link-list__item:last-child {
+  margin: 0;
+}
+
+.newsletter-box__text {
+  font-size: 20px;
+  line-height: 1.6em;
+  color: $secondary-color;
+}
+
+.newsletter-box__text--small-size {
+  font-size: 14px;
+}
+
+.subscription-form {
+  position: relative;
+  margin-top: 18px;
+  padding-bottom: 10px;
+}
+
+.subscription-form__input {
+  display: block;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 23px;
+  padding-right: 95px;
+  border: 1px solid $main-dark-color;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.subscription-form__input::placeholder {
+  color: $main-dark-color;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.subscription-form__button {
+  position: absolute;
+  bottom: 23%;
+  right: 2%;
+  @include button(11px, 15px, 11px, 18px);
+  color: $main-light-color;
+  background-color: $accent-color;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6em;
+
+  &:hover,
+  &:focus {
+    background-color: $main-light-color;
+    color: $accent-color;
+  }
+}
+.footer__link {
+  margin-right: 24px;
+}
+
+.footer__link:last-child {
+  margin-right: 0px;
+}
+
+.copyright,
+.footer__link {
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+.social {
+  display: flex;
+}
+
+.social__item {
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-color;
+  }
+}
