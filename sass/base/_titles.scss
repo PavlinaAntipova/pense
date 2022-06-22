@@ -1,5 +1,13 @@
 .title {
-  font-size: 96px;
+  font-size: 44px;
   font-weight: 700;
   line-height: 100%;
+
+  @media (min-width: 768px) {
+      font-size: 76px;
+    }
+
+  @media (min-width: 1200px) {
+        font-size: 96px;
+    }
 }

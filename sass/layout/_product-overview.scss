@@ -1,13 +1,26 @@
 .overview-section {
   padding-top: 87px;
   background-color: $accent-color;
-  background-image: url(../image/bg-gradient.png);
+  background-image: url(../image/backgrounds/bg-gradient.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../image/backgrounds/bg-gradient@2x.png);
+    }
+
+  @media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    background-image: url(../image/backgrounds/bg-gradient@3x.png);
+  }
 }
 
 .overview-img {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }

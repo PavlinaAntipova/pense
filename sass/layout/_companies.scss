@@ -1,13 +1,34 @@
 .companies-section {
+  @include padding(35px, 20px);
+    @media (min-width: 768px) {
   @include padding(85px, 70px);
+      }
+
 }
 
 .companies {
-  @include flexsible(center, center);
+  @media (min-width: 768px) {
+      @include flexsible(center, center);
+    }
+ 
 }
 
 .companies__item {
+
+@media (max-width: 767px) {
+&:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+}
+  @media (min-width: 768px) {
   &:not(:last-child) {
-    margin-right: 108px;
+    margin-right: 50px;
   }
 }
+}
+
+.companies__item {
+  @media (max-width: 767px) {
+    @include flexsible(center, center);
+}}

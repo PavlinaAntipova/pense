@@ -3,5 +3,19 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1200px;
+  width: 310px;
+
+  @media (min-width: 425px) {
+    width: 400px;
+  }
+
+  @media (min-width: 768px) {
+    width: 740px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    }
+
+
 }

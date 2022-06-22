@@ -1,0 +1,47 @@
+.mobile-menu {
+@media (max-width: 1199px) {
+    position: absolute;
+    z-index: -2222;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+    height: 100vh;
+    width: 100%;
+    background-color: $accent-color;
+    opacity: 0;
+    @include transition(opacity);
+    }
+
+    @media (min-width: 1200px) {
+       opacity: 1;
+    }
+}
+
+.mobile-menu.isOpen {
+    opacity: 1;
+    z-index: 2222;
+}
+
+.btn-close {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    opacity: 0;
+    pointer-events: none;
+    @include transition(opacity);
+
+    & svg {
+    fill: $main-light-color;
+    width: 20px;
+    height: 20px;
+    }
+    
+}
+
+.mobile-menu.isOpen .btn-close{
+    opacity: 1;
+    pointer-events: all;
+}
+

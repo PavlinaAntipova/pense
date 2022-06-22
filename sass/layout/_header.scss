@@ -1,39 +1,92 @@
 .header {
-  @include padding(60px, 105px);
+  position: relative;
+  @include padding(30px, 30px);
+    @media (min-width: 768px) {
+      @include padding(60px, 105px);
+    }
+  
 }
 
 .header__container {
   @include flexsible(space-between, center);
 }
 
+.nav {
+  @media (min-width: 1200px) {
+      margin-right: 40px;;
+  
+    }
+}
+
 .nav__list {
-  @include flexsible(center, center);
+  @media (min-width: 1200px) {
+    @include flexsible(center, center);
+  }
 }
 
 .nav__item {
-  &:not(:last-child) {
-    margin-right: 40px;
+  @media (max-width: 1199px) {
+    color: $main-light-color;
+    margin-bottom: 20px;
   }
+
+  @media (min-width: 1200px) {
+      &:not(:last-child) {
+          margin-right: 40px;
+        }
+    }
+
+  
 }
 
 .nav__link {
   font-size: 18px;
   line-height: 95%;
+  @include transition(color);
+  
 
-  &:hover {
+  @media (min-width: 1200px) {
+  &:hover, &:focus {
     color: $accent-color;
   }
 }
+}
 
 .header__button {
+  display: block;
+  text-align: center;
   @include button(15px, 18px, 18px, 15px);
   font-size: 18px;
   line-height: 95%;
   color: $accent-color;
   background-color: $main-light-color;
+  @include transition(background-color);
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $accent-color;
     color: $main-light-color;
   }
+
+  @media (max-width: 1199px) {
+         margin: 0 auto;
+    }
+}
+
+.btn-open {
+  & svg {
+
+      fill: $accent-color;
+    }
+ 
+@media (min-width: 1200px) {
+display: none;
+  }
+
+}
+
+.wrapper {
+    @media (min-width: 1200px) {
+        @include flexsible(center, center);
+
+      }
 }

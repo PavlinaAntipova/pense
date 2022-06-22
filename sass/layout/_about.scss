@@ -1,35 +1,64 @@
 .about {
-  @include padding(140px, 140px);
+  @include padding(30px, 30px);
+
+  @media (min-width: 768px) {
+      @include padding(140px, 140px);
+    }
 }
 
 .about__text-box {
-  display: flex;
-  align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+
+@media (min-width: 768px) {
+      display: flex;
+    align-items: center;
+       
+  }
+  
+
 }
 
 .about__title {
-  display: block;
+margin-bottom: 15px;
+  @media (min-width: 768px) {
   margin-right: 30px;
+  margin-bottom: 0;
   max-width: 60%;
+  
+    }
 }
 
 .about__text {
   @extend %text;
-  max-width: 35%;
+  
+    @media (min-width: 768px) {
+max-width: 35%;
+    
+      }
 }
 
 .advantage {
-  @include flexsible(center, center);
-  margin: -15px;
+    @media (min-width: 768px) {
+        @include flexsible(center, center);
+          margin: -15px;
+    
+      }
+  
 }
 .advantage__item {
-  @include padding(63px, 63px);
   @include flexsible(center, center);
-  flex-direction: column;
-  flex-basis: calc(100% / 3 - 30px);
-  margin: 15px;
-  border-radius: 12px;
+    flex-direction: column;
+    border-radius: 12px;
+    
+  @media (min-width: 768px) {
+    @include padding(63px, 63px);
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
+     @include transition(box-shadow);
+
+  
+  
 
   &:hover,
   &:focus {
@@ -77,4 +106,5 @@
 
 .advantage__icon-arrow {
   opacity: 0;
+  @include transition(opacity);
 }

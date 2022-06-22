@@ -1,13 +1,24 @@
 .hero {
-  padding-bottom: 210px;
+  padding-bottom: 20px;
+@media (min-width: 768px) {
+    padding-bottom: 210px;
+  }
+ 
 }
 
 .hero__container {
-  @include flexsible(space-between, center);
+  @media (min-width: 768px) {
+      @include flexsible(space-between, center);
+    }
+  
 }
 
 .hero__wrraper {
   max-width: 540px;
+    @media (maz-width: 767px) {
+          margin-bottom: 20px;
+      }
+
 }
 
 .hero__title {
@@ -21,18 +32,26 @@
 
 .hero__button {
   @include button(18px, 24px, 18px, 24px);
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  margin-right: 25px;
+  margin-right: 0;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 95%;
   color: $main-light-color;
   background-color: $accent-color;
+  @include transition(background-color);
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $main-light-color;
     color: $accent-color;
   }
+
+        @media (min-width: 1200px) {
+          margin-right: 25px;
+          margin-bottom: 0;
+            display: inline-flex;
+        }
 }
 
 .hero__icon {
@@ -42,4 +61,13 @@
 
 .hero__description {
   @extend %text;
+}
+
+.hero__image {
+  max-width: 100%;
+  height: auto;
+
+  @media (min-width: 768px) {
+    max-width: 50%;
+    }
 }

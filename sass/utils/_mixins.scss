@@ -17,3 +17,9 @@
   padding-right: $padding-right;
   padding-left: $padding-left;
 }
+
+@mixin transition($value) {
+  transition: $value 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+

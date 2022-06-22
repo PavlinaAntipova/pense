@@ -1,5 +1,10 @@
 .feedback {
-  @include padding(120px, 120px);
+  @include padding(60px, 60px);
+
+  @media (min-width: 768px) {
+    @include padding(120px, 120px);
+    }
+  
 }
 
 .feedback__title {
@@ -66,4 +71,9 @@
 .slider__name span {
   font-weight: 700;
   color: #000000;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
 }

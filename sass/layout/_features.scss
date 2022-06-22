@@ -1,14 +1,26 @@
 .features__container {
+
+@media (min-width: 768px) {
   @include flexsible(center, center);
+}
+  
 }
 
 .features__content-box {
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
   max-width: 45%;
   margin-right: 30px;
+  margin-bottom: 0;
+  }
 }
 
 .features__item {
-  @include padding(142px, 141px);
+@include padding(80px, 60px);
+
+  @media (min-width: 768px) {
+      @include padding(142px, 141px);
+    }
 
   &:nth-child(2n) {
     background-color: #fffaf8;
@@ -16,12 +28,19 @@
 }
 
 .features__item:nth-child(2n) .features__container {
-  flex-direction: row-reverse;
+
+  @media (min-width: 768px) {
+      flex-direction: row-reverse;
+    }
+  
 }
 
 .features__item:nth-child(2n) .features__container .features__content-box {
-  margin-right: 0;
-  margin-left: 30px;
+    @media (min-width: 768px) {
+    margin-right: 0;
+      margin-left: 30px;
+      }
+  
 }
 
 .features__title {
@@ -37,8 +56,13 @@
   display: flex;
   align-items: center;
   color: $accent-color;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 100%;
+
+  @media (min-width: 768px) {
+  font-size: 24px;
+  }
+
 }
 
 .features__button svg {
@@ -47,6 +71,9 @@
 }
 
 .features__icon {
-  max-width: 45%;
-  height: auto;
+    @media (min-width: 768px) {
+          max-width: 45%;
+      }
+
+
 }

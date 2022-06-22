@@ -21,15 +21,25 @@
                     <use href="./image/icons.svg#icon-logo"></use>
                 </svg>
             </a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#about">About us</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#price">Pricing</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#feedback">Feedback</a></li>
-                </ul>
-            </nav>
-            <button class="header__button">Request a demo</button>
+            <button class="btn-open js-open"><svg width="40" height="40">
+                <use href="./image/icons.svg#icon-menu"></use>
+            </svg></button>
+            <div class="js-menu mobile-menu">
+                <button class="btn-close js-close"><svg width="112" height="40">
+                    <use href="./image/icons.svg#icon-close"></use>
+                </svg></button>
+                <div class="wrapper"><nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">About us</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#price">Pricing</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#feedback">Feedback</a></li>
+                    </ul>
+                </nav>
+                <a href="#usage" class="header__button">Request a demo</a></div>
+               
+            </div>
+            
         </div>
     </header>
     <main>
@@ -43,29 +53,29 @@
                         </svg></button>
                     <span class="hero__description">— Web, iOS and Android</span>
                 </div>
-                <svg width="538" height="478">
-                    <use href="./image/icons.svg#icon-hero"></use>
-                </svg>
+                <img class="hero__image" src="./image/illustations/hero.svg"/>
+                 
             </div>
         </section>
         <section class="overview-section">
             <div class="container">
                 <h2 class="visually-hidden">Overview</h2>
-                <img class="overview-img" src="./image/overview.png" alt="Overview app">
+                <img class="overview-img" src="./image/overview/overview.png" srcset="./image/overview/overview.png 1x, ./image/overview/overview@2x.png 2x, ./image/overview/overview@3x.png 3x" alt="Overview app">
                 </section>
                 <section class="companies-section">
                     <h2 class="visually-hidden">Companies</h2>
+                    <div class="container">
                     <ul class="companies">
-                        <li class="companies__item"><img src="./image/company-1.png" alt="Logo Facebook"></li>
-                        <li class="companies__item"><img src="./image/company-2.png" alt="Logo Google"></li>
-                        <li class="companies__item"><img src="./image/company-3.png" alt="Logo Coca-Cola"></li>
-                        <li class="companies__item"><img src="./image/company-5.png" alt="Logo LinkedIn"></li>
-                        <li class="companies__item"><img src="./image/company-4.png" alt="Logo Samsung"></li>
+                        <li class="companies__item"><img src="./image/companies/company-1.png" srcset="./image/companies/company-1.png 1x, ./image/companies/company-1@2x.png 2x, ./image/companies/company-1@3x.png 3x" alt="Logo Facebook"></li>
+                        <li class="companies__item"><img src="./image/companies/company-2.png" srcset="./image/companies/company-2.png 1x, ./image/companies/company-2@2x.png 2x, ./image/companies/company-1@3x.png 3x" alt="Logo Google"></li>
+                        <li class="companies__item"><img src="./image/companies/company-3.png" srcset="./image/companies/company-3.png 1x, ./image/companies/company-3@2x.png 2x, ./image/companies/company-3@3x.png 3x" alt="Logo Coca-Cola"></li>
+                        <li class="companies__item"><img src="./image/companies/company-4.png" srcset="./image/companies/company-4.png 1x, ./image/companies/company-4@2x.png 2x, ./image/companies/company-4@3x.png 3x" alt="Logo LinkedIn"></li>
+                        <li class="companies__item"><img src="./image/companies/company-5.png" srcset="./image/companies/company-5.png 1x, ./image/companies/company-5@2x.png 2x, ./image/companies/company-5@3x.png 3x" alt="Logo Samsung"></li>
                     </ul>
-            </div>
+                </div>
 
         </section>
-        <section>
+        <section id="features">
             
                 <h2 class="visually-hidden">Features</h2>
                 
@@ -81,9 +91,8 @@
                                 <use href="./image/icons.svg#icon-arrow-right"></use>
                             </svg></button>
                             </div>
-                        <svg class="features__icon" width="540" height="430">
-                            <use href="./image/icons.svg#icon-features-1"></use>
-                        </svg>
+                            <img class="features__icon" src="./image/illustations/features-1.svg" />
+                    
                         </div>
                     </li>
                     <li class="features__item"><div class="container features__container">
@@ -97,9 +106,7 @@
                                 <use href="./image/icons.svg#icon-arrow-right"></use>
                             </svg></button>
                             </div>
-                        <svg class="features__icon" width="540" height="430">
-                            <use href="./image/icons.svg#icon-features-2"></use>
-                        </svg>
+                        <img class="features__icon" src="./image/illustations/features-2.svg" />
                         </div>
                     </li>
                     <li class="features__item">
@@ -114,15 +121,13 @@
                                     <use href="./image/icons.svg#icon-arrow-right"></use>
                                 </svg></button>
                         </div>
-                        <svg class="features__icon" width="540" height="430">
-                            <use href="./image/icons.svg#icon-features-3"></use>
-                        </svg>
+                        <img class="features__icon" src="./image/illustations/features-3.svg" />
                         </div>
                     </li>
                 </ul>
        
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="about__text-box">
                     <h2 class="title about__title">The Product we work with.</h2>
@@ -169,7 +174,7 @@
                 </ul>
             </div>
         </section>
-        <section class="price">
+        <section id="price" class="price">
             <div class="container">
                 <h2 class="title price__title">Choose your flexible plan.</h2>
                 <ul class="price-cards">
@@ -260,7 +265,7 @@
                 </ul>
             </div>
         </section>
-        <section class="feedback">
+        <section id="feedback" class="feedback">
             <div class="container">
                 <h2 class="visually-hidden">Feedback</h2>
                 <p class="title feedback__title">We have millions of best wishers</p>
@@ -270,7 +275,10 @@
                             <p class="slider__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel,
                                 fringilla sit eros
                                 pretium felis massa mauris, aliquam congue.</p>
-                            <div class="slider__sign"><img src="./image/avatar-1.png" alt="women">
+                            <div class="slider__sign">
+                                <img class="avatar" src="./image/avatars/avatar-1.png"
+                                srcset="../image/avatars/avatar-1.png 1x, ./image/avatars/avatar-1@2x.png 2x, ./image/avatars/avatar-1@3x.png 3x"
+                                alt="women">
                                 <p class="slider__name"><span>Cameron Williamson,</span> CEO</p>
                             </div>
                         </div>
@@ -279,7 +287,10 @@
                             <p class="slider__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel,
                                 fringilla sit eros
                                 pretium felis massa mauris, aliquam congue.</p>
-                            <div class="slider__sign"><img src="./image/avatar-2.png" alt="women">
+                            <div class="slider__sign">
+                                <img class="avatar" src="./image/avatars/avatar-2.png"
+                                    srcset="../image/avatars/avatar-2.png 1x, ./image/avatars/avatar-2@2x.png 2x, ./image/avatars/avatar-2@3x.png 3x"
+                                    alt="women">
                                 <p class="slider__name"><span>Cameron Williamson,</span> CEO</p>
                             </div>
                         </div>
@@ -288,7 +299,10 @@
                             <p class="slider__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel,
                                 fringilla sit eros
                                 pretium felis massa mauris, aliquam congue.</p>
-                        <div class="slider__sign"><img src="./image/avatar-3.png" alt="women">
+                        <div class="slider__sign">
+                            <img class="avatar" src="./image/avatars/avatar-3.png"
+                                srcset="../image/avatars/avatar-3.png 1x, ./image/avatars/avatar-3@2x.png 2x, ./image/avatars/avatar-3@3x.png 3x"
+                                alt="women">
                             <p class="slider__name"><span>Cameron Williamson,</span> CEO</p>
                         </div>
                         </div>
@@ -297,7 +311,10 @@
                             <p class="slider__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel,
                                 fringilla sit eros
                                 pretium felis massa mauris, aliquam congue.</p>
-                            <div class="slider__sign"><img src="./image/avatar-4.png" alt="women">
+                            <div class="slider__sign">
+                                <img class="avatar" src="./image/avatars/avatar-4.png"
+                                    srcset="../image/avatars/avatar-4.png 1x, ./image/avatars/avatar-4@2x.png 2x, ./image/avatars/avatar-4@3x.png 3x"
+                                    alt="women">
                             <p class="slider__name"><span>Cameron Williamson,</span> CEO</p></div>
                         
                         </div>
@@ -306,7 +323,10 @@
                             <p class="slider__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel,
                                 fringilla sit eros
                                 pretium felis massa mauris, aliquam congue.</p>
-                            <div class="slider__sign"><img src="./image/avatar-3.png" alt="women">
+                            <div class="slider__sign">
+                                <img class="avatar" src="./image/avatars/avatar-2.png"
+                                    srcset="../image/avatars/avatar-1.png 1x, ./image/avatars/avatar-2@2x.png 2x, ./image/avatars/avatar-2@3x.png 3x"
+                                    alt="women">
                                 <p class="slider__name"><span>Cameron Williamson,</span> CEO</p>
                             </div>
                             </div>
@@ -322,7 +342,7 @@
                 
             
         </section>
-        <section class="usage">
+        <section id="usage" class="usage">
             <div class="container">
                 <h2 class="usage__title">20M+ downloaded from 32 diffrent countires</h2>
                 <p class="usage__description">Try demo for 7 days with full features.</p>
@@ -382,8 +402,8 @@
             </div>
             
             <div class="footer__wrapper footer__wrapper--padding">
-                <div><a class="footer__link" href="">Privacy & Terms</a>
-                <a class="footer__link" href="">Contact Us</a></div>
+                <div class="additional-links"><a class="additional-links__link" href="">Privacy & Terms</a>
+                <a class="additional-links__link" href="">Contact Us</a></div>
             
                 <p class="copyright">Copyright &copy; 2022 xpence</p>
                 <ul class="social">
@@ -406,7 +426,9 @@
             </div>
         </div>
     </footer>
-    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/main.js" type="module"></script>
 </body>
 </html>
